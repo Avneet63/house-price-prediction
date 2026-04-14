@@ -39,7 +39,7 @@ pip install pandas numpy scikit-learn joblib
 
 Run the main script to train the model (if not already trained):
 ```bash
-python main.py
+python house_price_prediction.py
 ```
 
 This will:
@@ -53,7 +53,7 @@ This will:
 
 If the model is already trained, the script will perform inference:
 ```bash
-python main.py
+python house_price_prediction.py
 ```
 
 This will:
@@ -96,3 +96,6 @@ The script automatically:
 - The model uses stratified sampling to ensure representative train/test splits
 - Categorical encoding handles unknown categories during inference
 - All preprocessing steps are saved in the pipeline for consistent transformation
+
+## Key Insight
+Random Forest achieved the best performance, and features like income level and location have a strong impact on house prices.
